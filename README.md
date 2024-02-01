@@ -5,6 +5,26 @@ Este es un proyecto básico que utiliza Mongoose para realizar operaciones CRUD 
 ## Paso 1: Crear un Servidor Express
 
 Lo primero creamos un servidor de express y lo levantamos.
+Para ello inicializamos proyecto de node e instalamos dependencias:
+
+Terminal
+
+```
+npm init -y
+npm i express mongoose dotenv
+
+```
+Hemos instalado express para crear el servidor, mongoose el ODM y dotenv para manejar variables de entorno.
+
+Código Servidor
+```
+// index.js
+const express = require('express');
+const app = express();
+const PORT = 8080;
+
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+```
 
 
 ## Paso 2: Conexión DB
